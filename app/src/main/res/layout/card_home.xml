@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    android:background="@color/White">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:weightSum="10"
+        android:background="@color/White">
+
+        <ImageView
+
+            android:id="@+id/fimage"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fish" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="94dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOOD NAME"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/fplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOOD PLACE"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/fprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIZE"
+                android:textColor="@color/Black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/addcart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/capsule"
+            android:gravity="center"
+
+            android:text="ORDER"
+            android:textColor="@color/White" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

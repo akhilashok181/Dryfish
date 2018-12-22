@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="293dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="158dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/texinputusername1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:focusable="auto"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:drawableLeft="@drawable/ic_mail_outline"
+                android:drawablePadding="6dp"
+                android:hint=" Username"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:paddingBottom="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/texinputpassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:focusable="auto"
+            android:focusableInTouchMode="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/ic_lock_outline"
+                android:drawablePadding="6dp"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textStyle="bold" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="142dp"
+            android:layout_height="65dp"
+            android:layout_margin="22dp"
+            android:background="@drawable/blue_bn_anime"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>
