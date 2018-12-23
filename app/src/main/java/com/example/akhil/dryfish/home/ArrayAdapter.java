@@ -1,5 +1,7 @@
 package com.example.akhil.dryfish.home;
 
+import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,8 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.akhil.dryfish.Cardview;
 import com.example.akhil.dryfish.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -19,9 +23,11 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
     private List<Inventory> RVsList;
 
 
+
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
         public TextView fname,fplace,fprice;
         public ImageView fimage;
+        public CardView itemcard;
        // public ExpandableTextView main_article;
 
         /*  public ImageView main_article;
@@ -32,11 +38,12 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
             fname=view.findViewById(R.id.fname);
             fplace=view.findViewById(R.id.fplace);
             fprice=view.findViewById(R.id.fprice);
+            itemcard=view.findViewById(R.id.itemcard);
 
         }
     }
 
-    public ArrayAdapter(List<Inventory> RVsList) {
+    public ArrayAdapter(ArrayList<Inventory> RVsList) {
         this.RVsList = RVsList;
     }
 
@@ -54,6 +61,15 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
         holder.fname.setText(e.getFname());
         holder.fplace.setText(e.getFplace());
         holder.fprice.setText(e.getFprice());
+        holder.itemcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Cardview.class);
+                view.getContext().startActivity(intent);
+
+
+            }
+        });
 
     }
 

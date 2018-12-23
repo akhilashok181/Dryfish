@@ -3,6 +3,7 @@ package com.example.akhil.dryfish.home;
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ public class ViewPagerAdapter extends PagerAdapter {
     private Context context;
     private LayoutInflater layoutInflater;
     private Integer [] images = {R.drawable.prawns,R.drawable.shark,R.drawable.mullan};
+
 
     public ViewPagerAdapter(Context context) {
         this.context = context;

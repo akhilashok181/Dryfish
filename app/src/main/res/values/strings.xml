@@ -7,4 +7,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_card_view">Card_view</string>
+    <string name="us">\u0024</string>
+    <string name="Rs">\u20B9</string>
+    <string name="Fn">FoodName</string>
+    <string name="pr">500</string>
 </resources>

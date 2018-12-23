@@ -44,16 +44,16 @@ public class dash extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId())
                 {
-                    case R.id.navigation_home : bottomNavigationView.setItemBackgroundResource(R.color.Black);
+                    case R.id.navigation_home : bottomNavigationView.setItemBackgroundResource(R.color.fbutton_color_transparent);
                         setFragment(homeFragment);
                         return true;
-                    case R.id.navigation_search : bottomNavigationView.setItemBackgroundResource(R.color.Black);
+                    case R.id.navigation_search : bottomNavigationView.setItemBackgroundResource(R.color.fbutton_color_transparent);
                         setFragment(serchFragment);
                         return true;
-                    case R.id.navigation_cart : bottomNavigationView.setItemBackgroundResource(R.color.Black);
+                    case R.id.navigation_cart : bottomNavigationView.setItemBackgroundResource(R.color.fbutton_color_transparent);
                         setFragment(cartFragment);
                         return true;
-                    case R.id.navigation_profile : bottomNavigationView.setItemBackgroundResource(R.color.Black);
+                    case R.id.navigation_profile : bottomNavigationView.setItemBackgroundResource(R.color.fbutton_color_transparent);
                         setFragment(profileFragment);
                         return true;
                     default:

@@ -18,6 +18,10 @@ public class Inventory {
         this.fplace=fplace;
         this.fprice=fprice;
     }
+
+    public Inventory(String kozhuva, String north_paravur, String s) {
+    }
+
     public int getFimage() {
         return fimage;
     }

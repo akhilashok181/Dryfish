@@ -7,23 +7,15 @@ package com.example.akhil.dryfish.cart;
 public class Inventory {
 
 
-    private int cfimage;
     private String cfname;
     private String cfplace;
     private String cfprice;
-    public Inventory(int fimage, String fname, String fplace, String fprice){
-        this.cfimage=fimage;
+    public Inventory(String fname, String fplace, String fprice){
         this.cfname=fname;
         this.cfplace=fplace;
         this.cfprice=fprice;
     }
-    public int getFimage() {
-        return cfimage;
-    }
 
-    public void setFimage(int fimage) {
-        this.cfimage = fimage;
-    }
     public String getFname() {
         return cfname;
     }

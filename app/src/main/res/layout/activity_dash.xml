@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/Black"
+        android:background="@color/fbutton_color_transparent"
 
         app:menu="@menu/navigation" />
 

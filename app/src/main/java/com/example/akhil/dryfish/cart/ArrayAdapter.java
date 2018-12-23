@@ -17,7 +17,7 @@ import java.util.List;
 public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerViewHolder>
 {
 
-    private List<Inventory> RVsList;
+    private List<Inventory> RVcList;
 
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder {
@@ -29,7 +29,6 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
          */
         public RecyclerViewHolder(View view) {
             super(view);
-            fimage=view.findViewById(R.id.fimage);
             fname=view.findViewById(R.id.fname);
             fplace=view.findViewById(R.id.fplace);
             fprice=view.findViewById(R.id.fprice);
@@ -37,8 +36,8 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
         }
     }
 
-    public ArrayAdapter(List<Inventory> RVsList) {
-        this.RVsList = RVsList;
+    public ArrayAdapter(List<Inventory> RVcList) {
+        this.RVcList = RVcList;
     }
 
     @Override
@@ -50,8 +49,7 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
 
     @Override
     public void onBindViewHolder(RecyclerViewHolder holder, int position) {
-        Inventory e = RVsList.get(position);
-        holder.fimage.setImageResource(e.getFimage());
+        Inventory e = RVcList.get(position);
         holder.fname.setText(e.getFname());
         holder.fplace.setText(e.getFplace());
         holder.fprice.setText(e.getFprice());
@@ -60,6 +58,6 @@ public class ArrayAdapter extends RecyclerView.Adapter<ArrayAdapter.RecyclerView
 
     @Override
     public int getItemCount() {
-        return RVsList.size();
+        return RVcList.size();
     }
 }

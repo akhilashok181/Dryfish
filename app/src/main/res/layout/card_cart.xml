@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
     android:layout_height="wrap_content"
-    android:background="@color/White">
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:background="@color/White"
-        android:padding="10dp"
-        android:paddingLeft="10dp"
-        android:weightSum="10">
-
-        <ImageView
-
-            android:id="@+id/fimage"
-            android:layout_width="52dp"
-            android:layout_height="128dp"
-            android:layout_weight="4"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fish" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
 
         <LinearLayout
-            android:layout_width="38dp"
-            android:layout_height="89dp"
-            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
             android:orientation="vertical">
 
             <TextView
-
                 android:id="@+id/fname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FOOD NAME"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:text="ITEM NAME"
+                android:textAllCaps="true"
                 android:textColor="@color/Black"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -44,19 +36,25 @@
                 android:id="@+id/fplace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FOOD PLACE"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:text="ITEM LOCATION"
+                android:textAllCaps="true"
                 android:textColor="@color/Black"
                 android:textSize="14sp"
-                android:textStyle="italic" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/fprice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PRIZE"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:text="PRICE"
+                android:textAllCaps="true"
                 android:textColor="@color/Black"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="italic" />
 
 
         </LinearLayout>
@@ -69,14 +67,15 @@
 
             <Button
                 android:id="@+id/removecart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@drawable/capsule"
+                android:layout_width="76dp"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_delete_black_24dp"
                 android:gravity="center"
                 android:paddingLeft="10dp"
-                android:text="REMOVE"
                 android:textColor="@color/White" />
+
+
 
         </LinearLayout>
 

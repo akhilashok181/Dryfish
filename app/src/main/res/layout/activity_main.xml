@@ -6,6 +6,7 @@
     android:layout_height="fill_parent"
     android:background="@mipmap/back"
     tools:context=".MainActivity"
+    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
 
     >
 
