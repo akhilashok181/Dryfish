@@ -1,4 +1,6 @@
 package com.example.akhil.dryfish.orders;
 
-public class pastorder {
+import android.support.v4.app.Fragment;
+
+public class pastorder extends Fragment {
 }
