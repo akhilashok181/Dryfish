@@ -17,51 +17,69 @@
             android:layout_height="111dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_person_black_24dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NAME"
-            android:textSize="20dp"
-            android:textColor="@color/Black"
-            android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="NAME"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/myacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_build_black_24dp"
+            android:drawablePadding="8dp"
+            android:paddingTop="20dp"
             android:text="MY ACCOUNT"
             android:textColor="@color/Black"
-            android:textSize="25dp"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_restaurant_menu_black_24dp"
+            android:drawablePadding="8dp"
             android:paddingTop="20dp"
-            android:drawableLeft="@drawable/ic_build_black_24dp"
-            android:drawablePadding="8dp"/>
+            android:text="ORDERS"
+            android:textColor="@color/Black"
+            android:textSize="25dp" />
+
 
         <TextView
+            android:id="@+id/pay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
+            android:drawablePadding="8dp"
+            android:paddingTop="20dp"
             android:text="PAYMENTS"
             android:textColor="@color/Black"
-            android:textSize="25dp"
-            android:paddingTop="20dp"
-            android:drawableLeft="@drawable/ic_monetization_on_black_24dp"
-            android:drawablePadding="8dp"/>
+            android:textSize="25dp" />
+
         <TextView
+            android:id="@+id/help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_help_black_24dp"
+            android:drawablePadding="8dp"
+            android:paddingTop="20dp"
             android:text="HELP"
             android:textColor="@color/Black"
-            android:textSize="25dp"
-            android:paddingTop="20dp"
-            android:drawableLeft="@drawable/ic_help_black_24dp"
-            android:drawablePadding="8dp"/>
+            android:textSize="25dp" />
+
         <TextView
+            android:id="@+id/logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="LOGOUT"
-            android:textSize="25dp"
-            android:textColor="@color/Black"
-            android:paddingTop="20dp"
             android:drawableLeft="@drawable/ic_radio_button_checked_black_24dp"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="8dp"
+            android:paddingTop="20dp"
+            android:text="LOGOUT"
+            android:textColor="@color/Black"
+            android:textSize="25dp" />
 
 
     </LinearLayout>

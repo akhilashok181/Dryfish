@@ -10,11 +10,12 @@ import android.widget.Toast;
 public class Cardview extends AppCompatActivity {
 
     FloatingActionButton add;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardview);
-        add = findViewById(R.id.add_btn);
+        add = findViewById(R.id.addbtn);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

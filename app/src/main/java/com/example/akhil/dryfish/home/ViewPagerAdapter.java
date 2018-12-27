@@ -12,9 +12,6 @@ import android.widget.Toast;
 
 import com.example.akhil.dryfish.R;
 
-/**
- * Created by Sanket on 27-Feb-17.
- */
 
 public class ViewPagerAdapter extends PagerAdapter {
 

@@ -12,4 +12,7 @@
     <string name="Rs">\u20B9</string>
     <string name="Fn">FoodName</string>
     <string name="pr">500</string>
+    <string name="search">search</string>
+    <string name="fish">FISH</string>
+    <string name="manage_address">MANAGE ADDRESS</string>
 </resources>

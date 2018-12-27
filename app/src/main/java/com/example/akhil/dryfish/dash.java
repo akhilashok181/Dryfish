@@ -20,7 +20,7 @@ public class dash extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
 
     private HomeFragment homeFragment;
-    private SerchFragment serchFragment;
+    private SearchFragment serchFragment;
     private CartFragment cartFragment;
     private ProfileFragment profileFragment;
 
@@ -33,7 +33,7 @@ public class dash extends AppCompatActivity {
         frameLayout= (FrameLayout) findViewById(R.id.main_frame);
 
         homeFragment = new HomeFragment();
-        serchFragment = new  SerchFragment();
+        serchFragment = new SearchFragment();
         cartFragment = new  CartFragment();
         profileFragment = new  ProfileFragment();
 

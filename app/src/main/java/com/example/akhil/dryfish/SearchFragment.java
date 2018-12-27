@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class SerchFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
-    public SerchFragment() {
+    public SearchFragment() {
         // Required empty public constructor
     }
 
@@ -25,7 +25,7 @@ public class SerchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_serch, container, false);
+        return inflater.inflate(R.layout.fragment_search, container, false);
     }
 
     }
