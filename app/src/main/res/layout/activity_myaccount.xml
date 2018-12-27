@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myaccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="117dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="NAME"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="EDIT PROFILE"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/Black"
+            android:text="@string/manage_address"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="FEEDBACK"
+            android:textColor="@color/Black"
+            android:drawableLeft="@drawable/ic_content_paste_black_24dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
