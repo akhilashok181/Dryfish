@@ -15,4 +15,8 @@
     <string name="search">search</string>
     <string name="fish">FISH</string>
     <string name="manage_address">MANAGE ADDRESS</string>
+    <string name="item_name">ITEM NAME</string>
+    <string name="order_delivered">Order Delivered</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
 </resources>

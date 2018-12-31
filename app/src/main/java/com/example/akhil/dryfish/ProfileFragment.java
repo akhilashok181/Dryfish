@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.akhil.dryfish.orders.Order;
+
 
 public class ProfileFragment extends Fragment {
 
@@ -17,6 +19,7 @@ public class ProfileFragment extends Fragment {
     TextView pay;
     TextView help;
     TextView logout;
+    TextView orders;
     Activity context;
 
 
@@ -46,6 +49,7 @@ public class ProfileFragment extends Fragment {
         pay =(TextView) context.findViewById(R.id.pay);
         help =(TextView) context.findViewById(R.id.help);
         logout =(TextView) context.findViewById(R.id.logout);
+        orders = (TextView) context.findViewById(R.id.order);
 
         myacc.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
@@ -77,7 +81,13 @@ public class ProfileFragment extends Fragment {
 
         });
 
-
+        orders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(context, Order.class);
+                startActivity(intent);
+            }
+        });
 
 
 

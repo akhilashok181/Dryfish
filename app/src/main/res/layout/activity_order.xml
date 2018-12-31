@@ -4,16 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".orders.order">
+    tools:context=".orders.Order">
 
-    <FrameLayout
+    <android.support.design.widget.TabLayout
+        android:id="@+id/simpleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/white"
+        app:tabIndicatorColor="@color/Black"
+        app:tabSelectedTextColor="@color/Black"
+        app:tabTextColor="@color/Black" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/simpleViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/order_frame"
-        android:layout_above="@id/navigation"
-        android:layout_alignParentTop="true">
-
-    </FrameLayout>
-
+        android:layout_above="@id/simpleTabLayout"
+        android:layout_alignParentTop="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </RelativeLayout>

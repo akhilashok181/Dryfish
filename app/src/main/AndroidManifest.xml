@@ -30,10 +30,15 @@
         <activity
             android:name=".Cardview"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".myaccount" />
-        <activity android:name=".Payment" />
-        <activity android:name=".Help" />
-        <activity android:name=".orders.order"></activity>
+        <activity android:name=".myaccount"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Payment"
+                    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".Help"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name=".orders.Order"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
