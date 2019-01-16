@@ -4,6 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
+import com.example.akhil.dryfish.orders.Corder.corder;
+import com.example.akhil.dryfish.orders.Porder.pastorder;
+
 public class PagerAdapter extends FragmentStatePagerAdapter
 {
     int mNumOfTabs;
